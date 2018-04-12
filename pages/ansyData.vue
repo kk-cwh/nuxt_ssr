@@ -11,12 +11,11 @@ import axios from 'axios'
 export default {
   data(){
      return {
-         name:'hello World',
+         name:'hello World'
      }
   },
   async asyncData(){
-      let {data} = await axios.get('https://api.myjson.com/bins/e674f')
-
+      let {data} = await axios.get('https://api.myjson.com/bins/ys0db');
       return {info: data}
 
   }
