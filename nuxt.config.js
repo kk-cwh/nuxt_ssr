@@ -13,6 +13,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css:['~assets/css/normalize.css','~assets/main.css'],
   /*
   ** Customize the progress bar color
   */
@@ -21,6 +22,16 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    loaders:[
+      {
+        test:/\.(png|jpe?g|gif|svg)$/,
+        loader:"url-loader",
+        query:{
+          limit:10000,
+          name:'img/[name].[hash].[ext]'
+        }
+      }
+    ],
     /*
     ** Run ESLint on save
     */

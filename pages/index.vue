@@ -1,24 +1,17 @@
 <template>
   <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        Hello world!
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
+  <img src="/logo.jpg" alt="" srcset="">
+ <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/about">ABOUT</a></li>
+      <li><a href="/news/12dd3">NEWS-123</a></li>
+
+       <li><nuxt-link :to="{name:'index'}">HOME</nuxt-link></li>
+      <li><nuxt-link :to="{name:'about'}">ABOUT</nuxt-link></li>
+      <li><nuxt-link :to="{name:'news',params:{newsId:3306}}">NEWS</nuxt-link></li>
+      <li><nuxt-link :to="{name:'news-id',params:{id:123,title:'my blog'}}">News-1</nuxt-link></li>
+    </ul>
+
   </section>
 </template>
 
@@ -39,6 +32,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* background-image: url('/logo.jpg') ; */
 }
 
 .title {

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>zhangyake.site 博客</p>
     <nuxt/>
   </div>
 </template>
