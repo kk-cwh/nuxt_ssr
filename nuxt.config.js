@@ -1,4 +1,16 @@
+const axios = require('axios');
 module.exports = {
+  generate: {
+    routes: function () {
+      return axios.get('https://blog.zhangyake.site/api/_articles')
+      .then((res) => {
+        return res.data.data.articles.list.map((article) => {
+          return '/blog/article/' + article.id
+        })
+      })
+    }
+  },
+
   /*
   ** Headers of the page
   */
