@@ -10,10 +10,12 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://raw.githubusercontent.com/daneden/animate.css/master/animate.css' }
+
     ]
   },
-  css:['~assets/css/normalize.css','~assets/main.css'],
+  css:['~assets/css/normalize.css','~assets/main.css','~assets/css/font.css'],
   /*
   ** Customize the progress bar color
   */
@@ -22,6 +24,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
+
+    vendor: ['vue-aplayer'],
     loaders:[
       {
         test:/\.(png|jpe?g|gif|svg)$/,

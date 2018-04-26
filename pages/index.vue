@@ -1,12 +1,12 @@
 <template>
   <section class="container">
   <img src="/logo.jpg" alt="" srcset="">
- <ul>
-       <li><nuxt-link :to="{name:'index'}">HOME</nuxt-link></li>
-      <li><nuxt-link :to="{name:'about'}">ABOUT</nuxt-link></li>
+  <ul>
+       <li><nuxt-link :to="{name:'blog'}">我的博客</nuxt-link></li>
+      <!-- <li><nuxt-link :to="{name:'about'}">ABOUT</nuxt-link></li>
       <li><nuxt-link :to="{name:'ansyData'}">ansydata</nuxt-link></li>
       <li><nuxt-link :to="{name:'news',params:{newsId:3306}}">NEWS</nuxt-link></li>
-      <li><nuxt-link :to="{name:'news-id',params:{id:123,title:'my blog'}}">News-1</nuxt-link></li>
+      <li><nuxt-link :to="{name:'news-id',params:{id:123,title:'my blog'}}">News-1</nuxt-link></li> -->
     </ul>
 
   </section>
